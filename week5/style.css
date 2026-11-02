@@ -1,7 +1,5 @@
 
-/* Task 5.4 - CSS Variables */
-
-/* Root Variables */
+/* 5.4 CSS Variables */
 :root {
     --primary-color: #3158e7;
     --background-color: #eef2ff;
@@ -14,111 +12,108 @@
     --spacing-large: 35px;
 }
 
-/* Universal Selector */
+/* 5.2 Universal Selector */
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
-/* Body Styling */
+/* 5.3 Font and Text Styling */
 body {
-    background-color: var(--background-color);
     font-family: 'Poppins', sans-serif;
+    background-color: var(--background-color);
     color: var(--text-color);
     font-size: 16px;
     line-height: 1.6;
-    padding: 20px;
 }
 
-/* Container */
 .container {
-    max-width: 620px;
-    margin: auto;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: var(--spacing-medium);
 }
 
-/* Hero Section */
+/* 5.2 ID Selector */
 #hero {
     background-color: var(--primary-color);
     color: white;
     text-align: center;
     padding: var(--spacing-large);
-    border-radius: 12px;
-    margin-bottom: var(--spacing-medium);
+    border-radius: 10px;
+    margin-bottom: var(--spacing-large);
 }
 
-/* Heading */
-h1 {
-    font-size: 32px;
-    font-weight: 700;
-    color: white;
+#hero h1 {
+    font-size: 36px;
     margin-bottom: var(--spacing-small);
 }
 
-/* Hero Paragraph */
 #hero p {
-    font-size: 15px;
-    color: white;
-    line-height: 1.6;
+    font-size: 18px;
 }
 
-/* Cards */
+/* 5.2 Element Selector */
+h1 {
+    font-weight: 700;
+}
+
+/* 5.2 Class Selector */
 .card {
     background-color: var(--card-color);
-    padding: var(--spacing-medium);
-    border-radius: 12px;
-    margin-bottom: var(--spacing-medium);
+    padding: 25px;
+    margin-bottom: var(--spacing-large);
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
-/* Card Heading */
 .card h2 {
-    color: var(--text-color);
-    font-size: 21px;
-    font-weight: 600;
-    line-height: 1.4;
-    margin-bottom: 12px;
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-medium);
+    font-size: 24px;
 }
 
-/* Table */
+/* Table Styling */
 table {
     width: 100%;
     border-collapse: collapse;
 }
 
-th {
-    background-color: var(--primary-color);
-    color: white;
-    padding: 10px;
+th, td {
+    border: 1px solid var(--border-color);
+    padding: var(--spacing-medium);
     text-align: left;
-    font-size: 14px;
 }
 
-td {
-    padding: 10px;
-    color: var(--text-color);
-    font-size: 14px;
-    border-bottom: 1px solid var(--border-color);
+th {
+    background-color: var(--background-color);
 }
 
-/* Form */
-label {
-    font-size: 14px;
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-small);
 }
 
 input {
-    width: 175px;
-    padding: 6px;
-    margin-bottom: var(--spacing-small);
-    font-family: 'Poppins', sans-serif;
+    padding: 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    font-size: 15px;
 }
 
 button {
     background-color: var(--primary-color);
     color: white;
+    padding: 12px;
     border: none;
-    padding: 9px 17px;
     border-radius: 5px;
-    font-size: 14px;
-    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
     cursor: pointer;
+    margin-top: var(--spacing-small);
+}
+
+button:hover {
+    background-color: #203fc0;
 }
