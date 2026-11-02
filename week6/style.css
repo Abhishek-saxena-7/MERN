@@ -1,5 +1,5 @@
 
-/* Week 6 - Task 6.1 and 6.2 */
+/* Week 6 - Tasks 6.1, 6.2 and 6.3 */
 
 /* Universal Selector */
 * {
@@ -16,7 +16,7 @@
     --text-color: #222222;
 }
 
-/* Body Styling */
+/* Body */
 body {
     font-family: 'Poppins', sans-serif;
     background-color: var(--background-color);
@@ -60,10 +60,6 @@ body {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
-.card h2 {
-    margin-bottom: 12px;
-}
-
 /* Task 6.1 - Box Model */
 .box-demo {
     width: 300px;
@@ -105,7 +101,6 @@ body {
     font-size: 25px;
 }
 
-/* Profile Card Common Design */
 .profile-card {
     width: 320px;
     padding: 25px;
@@ -135,14 +130,14 @@ body {
     margin: 0 auto 15px;
 }
 
-/* Blue Profile Card */
+/* Blue Card */
 .blue-card {
     color: #3158e7;
     border-color: #3158e7;
     background-color: #eaf0ff;
 }
 
-/* Green Profile Card */
+/* Green Card */
 .green-card {
     color: #16834a;
     border-color: #16834a;
@@ -160,7 +155,6 @@ body {
     margin-bottom: 5px;
 }
 
-/* Card Labels */
 .card-label {
     display: inline-block;
     margin-top: 12px;
@@ -169,6 +163,30 @@ body {
     background-color: white;
     font-size: 12px;
     font-weight: 600;
+}
+
+/* Task 6.3 - Bio Box */
+.bio-section h2 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.bio-box {
+    height: 150px;
+    overflow: auto;
+    padding: 15px;
+    border: 2px solid #3158e7;
+    border-radius: 8px;
+    background-color: #f5f7ff;
+}
+
+.bio-box h3 {
+    margin-bottom: 10px;
+    color: #3158e7;
+}
+
+.bio-box p {
+    margin-bottom: 15px;
 }
 
 /* Footer */
