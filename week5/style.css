@@ -1,13 +1,18 @@
 
-/* Task 5.1 - Tech Club CSS */
+/* Task 5.2 - Four CSS Selectors */
+
+/* 1. Universal Selector */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 /* Body Styling */
 body {
-    margin: 0;
-    padding: 20px;
     background-color: #eef2ff;
     font-family: "Times New Roman", serif;
-    color: #222222;
+    padding: 20px;
 }
 
 /* Main Container */
@@ -16,27 +21,28 @@ body {
     margin: auto;
 }
 
-/* Hero Section */
+/* 2. ID Selector */
 #hero {
     background-color: #3158e7;
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 35px 20px;
     border-radius: 12px;
     margin-bottom: 15px;
 }
 
-#hero h1 {
+/* 3. Element Selector */
+h1 {
     font-size: 32px;
-    margin: 15px 0 10px;
+    margin-bottom: 10px;
 }
 
+/* Hero Paragraph */
 #hero p {
     font-size: 15px;
-    margin: 0 0 12px;
 }
 
-/* Card Styling */
+/* 4. Class Selector */
 .card {
     background-color: white;
     padding: 15px;
@@ -44,9 +50,9 @@ body {
     margin-bottom: 15px;
 }
 
+/* Card Heading */
 .card h2 {
     font-size: 21px;
-    margin-top: 5px;
     margin-bottom: 12px;
 }
 
@@ -81,6 +87,5 @@ button {
     border: none;
     padding: 9px 17px;
     border-radius: 5px;
-    font-size: 14px;
     cursor: pointer;
 }
