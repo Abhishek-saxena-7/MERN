@@ -1,5 +1,5 @@
 
-/* Task 7.2 - Centre Banner Text */
+/* Task 7.3 - Flexbox Cards */
 
 * {
     margin: 0;
@@ -9,45 +9,40 @@
 
 body {
     font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 30px;
 }
 
-/* Banner Section */
-.banner {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    min-height: 450px;
-    background-color: #2563eb;
-    color: white;
-
+.heading {
     text-align: center;
-    padding: 30px;
+    margin-bottom: 30px;
+    color: #222;
+}
+
+/* Cards Container */
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
     gap: 20px;
 }
 
-/* Heading */
-.banner h1 {
-    font-size: 40px;
+/* Individual Cards */
+.card {
+    flex: 1 1 200px;
+    background-color: white;
+    padding: 30px;
+    border: 2px solid #2563eb;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-/* Paragraph */
-.banner p {
-    font-size: 20px;
+.card h2 {
+    color: #2563eb;
+    margin-bottom: 15px;
 }
 
-/* Button */
-.banner-btn {
-    background-color: orange;
-    color: white;
-    border: none;
-    padding: 12px 25px;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-.banner-btn:hover {
-    background-color: darkorange;
+.card p {
+    color: #444;
+    line-height: 1.5;
 }
