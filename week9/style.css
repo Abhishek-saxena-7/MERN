@@ -1,5 +1,4 @@
 
-/* Basic CSS */
 * {
     box-sizing: border-box;
 }
@@ -35,7 +34,7 @@ nav a {
 /* Main Grid */
 main {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     padding: 25px;
 }
