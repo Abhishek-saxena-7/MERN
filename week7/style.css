@@ -10,131 +10,56 @@ body {
     background-color: #f1f5f9;
 }
 
-/* Navbar */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+header {
     background-color: #1e40af;
     color: white;
-    padding: 20px 40px;
-}
-
-.navbar nav {
-    display: flex;
-    gap: 25px;
-}
-
-.navbar a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-/* Banner */
-.banner {
-    min-height: 350px;
-    background-color: #dbeafe;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     text-align: center;
-    gap: 15px;
-    padding: 30px;
+    padding: 25px;
 }
 
-.banner h1 {
-    color: #1e40af;
-    font-size: 40px;
+header h1 {
+    margin-bottom: 10px;
 }
 
-.banner button {
-    background-color: #1e40af;
-    color: white;
-    border: none;
-    padding: 12px 25px;
-    border-radius: 6px;
-}
-
-/* About */
-.about,
-.skills,
-.contact {
-    padding: 40px 25px;
-    text-align: center;
-}
-
-.about p {
-    max-width: 650px;
-    margin: 15px auto;
-    line-height: 1.6;
-}
-
-/* Skills Cards */
-.card-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    margin-top: 25px;
+    padding: 25px;
 }
 
-.card {
+.box {
+    display: flex;
+    align-items: center;
+    gap: 15px;
     background-color: white;
+    padding: 25px;
     border: 2px solid #2563eb;
-    border-radius: 10px;
-    padding: 30px;
-    flex: 1 1 200px;
-    max-width: 300px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Contact */
-.contact {
-    background-color: #dbeafe;
+.box span {
+    font-size: 35px;
 }
 
-/* Footer */
-footer {
-    background-color: #1e40af;
-    color: white;
-    text-align: center;
-    padding: 20px;
+.box h2 {
+    color: #1e40af;
+    margin-bottom: 8px;
 }
 
-/* Tablet */
+.box p {
+    color: #555;
+}
+
 @media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    .banner h1 {
-        font-size: 30px;
-    }
-
-    .card-container {
-        justify-content: center;
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
-/* Mobile */
 @media (max-width: 480px) {
-    .navbar nav {
-        flex-direction: column;
-        align-items: center;
-        gap: 12px;
-    }
-
-    .banner h1 {
-        font-size: 24px;
-    }
-
-    .banner {
-        min-height: 280px;
-    }
-
-    .card {
-        max-width: 100%;
+    .grid-container {
+        grid-template-columns: 1fr;
     }
 }
