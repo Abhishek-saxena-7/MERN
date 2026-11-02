@@ -1,14 +1,14 @@
 
-/* Week 6 - Tasks 6.1, 6.2, 6.3 and 6.4 */
+/* Week 6 - Final CSS */
 
-/* Universal Selector */
+/* 1. Universal Selector */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-/* Root Variables */
+/* 2. CSS Variables */
 :root {
     --primary-color: #3158e7;
     --background-color: #eef2ff;
@@ -16,7 +16,7 @@
     --text-color: #222222;
 }
 
-/* Body */
+/* 3. Body */
 body {
     font-family: 'Poppins', sans-serif;
     background-color: var(--background-color);
@@ -25,16 +25,14 @@ body {
     line-height: 1.6;
 }
 
-/* Task 6.4 - Sticky Top Bar */
+/* 4. Sticky Navigation */
 .top-bar {
     position: sticky;
     top: 0;
     z-index: 1000;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     background-color: #203fc0;
     color: white;
     padding: 15px 30px;
@@ -59,14 +57,14 @@ body {
     text-decoration: underline;
 }
 
-/* Main Container */
+/* 5. Main Container */
 .container {
     max-width: 900px;
     margin: 40px auto;
     padding: 20px;
 }
 
-/* Student Information */
+/* 6. Student Information */
 .student-info {
     text-align: center;
     background-color: var(--primary-color);
@@ -85,7 +83,7 @@ body {
     font-size: 17px;
 }
 
-/* Common Card */
+/* 7. Common Cards */
 .card {
     background-color: var(--card-color);
     padding: 25px;
@@ -94,7 +92,7 @@ body {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
-/* Task 6.1 - Box Model */
+/* 8. Task 6.1 - Box Model */
 .box-demo {
     width: 300px;
     height: 180px;
@@ -114,7 +112,7 @@ body {
     font-size: 14px;
 }
 
-/* Box Model List */
+/* 9. Box Model Explanation */
 .card ul {
     padding-left: 25px;
 }
@@ -123,7 +121,7 @@ body {
     margin-bottom: 8px;
 }
 
-/* Task 6.2 - Profile Cards */
+/* 10. Task 6.2 - Profile Cards */
 .card-section {
     margin-top: 30px;
 }
@@ -164,21 +162,21 @@ body {
     margin: 0 auto 15px;
 }
 
-/* Blue Card */
+/* Blue Profile */
 .blue-card {
     color: #3158e7;
     border-color: #3158e7;
     background-color: #eaf0ff;
 }
 
-/* Green Card */
+/* Green Profile */
 .green-card {
     color: #16834a;
     border-color: #16834a;
     background-color: #e8fff0;
 }
 
-/* Profile Card Text */
+/* Profile Text */
 .profile-card h2 {
     font-size: 23px;
     margin-bottom: 8px;
@@ -199,7 +197,7 @@ body {
     font-weight: 600;
 }
 
-/* Task 6.3 - Scrollable Bio Box */
+/* 11. Task 6.3 - Scrollable Bio */
 .bio-section h2 {
     color: var(--primary-color);
     margin-bottom: 15px;
@@ -223,23 +221,20 @@ body {
     margin-bottom: 15px;
 }
 
-/* Task 6.4 - Fixed Plus Button */
+/* 12. Task 6.4 - Fixed Plus Button */
 .plus-button {
     position: fixed;
     right: 25px;
     bottom: 25px;
     z-index: 1100;
-
     width: 55px;
     height: 55px;
     border: none;
     border-radius: 50%;
-
-    background-color: #3158e7;
+    background-color: var(--primary-color);
     color: white;
     font-size: 32px;
     cursor: pointer;
-
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
 }
 
@@ -247,7 +242,7 @@ body {
     background-color: #203fc0;
 }
 
-/* Footer */
+/* 13. Footer */
 .footer {
     text-align: center;
     padding: 20px;
@@ -255,7 +250,7 @@ body {
     color: #555555;
 }
 
-/* Mobile Responsive */
+/* 14. Responsive Design */
 @media (max-width: 600px) {
     .top-bar {
         padding: 12px;
