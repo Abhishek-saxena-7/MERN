@@ -1,5 +1,5 @@
 
-/* Task 7.4 - Complete Landing Page */
+/* Task 7.5 - Responsive Website */
 
 * {
     margin: 0;
@@ -140,143 +140,75 @@ footer {
     padding: 20px;
 }
 
-/* Task 7.4 - Complete Landing Page */
+/* Tablet Responsive */
+@media (max-width: 768px) {
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    .navbar {
+        padding: 20px;
+    }
+
+    .nav-links {
+        gap: 12px;
+    }
+
+    .nav-links a {
+        font-size: 14px;
+    }
+
+    .banner h1 {
+        font-size: 32px;
+    }
+
+    .skills {
+        padding: 30px 20px;
+    }
 }
 
-html {
-    scroll-behavior: smooth;
-}
+/* Mobile Responsive */
+@media (max-width: 480px) {
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-}
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px 10px;
+    }
 
-/* Navbar */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #222;
-    padding: 20px 50px;
-}
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
 
-.logo {
-    color: white;
-    font-size: 28px;
-    font-weight: bold;
-}
+    .nav-links a {
+        font-size: 13px;
+    }
 
-.nav-links {
-    display: flex;
-    align-items: center;
-    gap: 25px;
-}
+    .banner {
+        min-height: 350px;
+        padding: 20px 10px;
+    }
 
-.nav-links a {
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
-}
+    .banner h1 {
+        font-size: 26px;
+    }
 
-.nav-links a:hover {
-    color: orange;
-}
+    .banner p {
+        font-size: 15px;
+    }
 
-.nav-btn {
-    background-color: orange;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-}
+    .about {
+        padding: 30px 15px;
+    }
 
-/* Banner */
-.banner {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 400px;
-    background-color: #2563eb;
-    color: white;
-    text-align: center;
-    padding: 30px;
-    gap: 20px;
-}
+    .skills {
+        padding: 30px 15px;
+    }
 
-.banner h1 {
-    font-size: 40px;
-}
+    .card {
+        flex: 1 1 100%;
+    }
 
-.banner p {
-    font-size: 18px;
-}
-
-.banner-btn {
-    background-color: orange;
-    color: white;
-    border: none;
-    padding: 12px 25px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-/* About */
-.about {
-    text-align: center;
-    padding: 50px 20px;
-}
-
-.about h2,
-.skills h2,
-.contact h2 {
-    margin-bottom: 20px;
-    color: #222;
-}
-
-/* Skills */
-.skills {
-    text-align: center;
-    padding: 40px 30px;
-}
-
-.skill-cards {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.card {
-    flex: 1 1 200px;
-    background-color: white;
-    padding: 30px;
-    border-radius: 10px;
-    border: 2px solid #2563eb;
-}
-
-.card h3 {
-    color: #2563eb;
-    margin-bottom: 10px;
-}
-
-/* Contact */
-.contact {
-    text-align: center;
-    padding: 40px;
-    background-color: white;
-}
-
-/* Footer */
-footer {
-    background-color: #222;
-    color: white;
-    text-align: center;
-    padding: 20px;
+    .contact {
+        padding: 30px 15px;
+    }
 }
