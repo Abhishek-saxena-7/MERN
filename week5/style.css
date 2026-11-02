@@ -1,5 +1,18 @@
 
-/* Task 5.3 - Fonts, Colors and Typography */
+/* Task 5.4 - CSS Variables */
+
+/* Root Variables */
+:root {
+    --primary-color: #3158e7;
+    --background-color: #eef2ff;
+    --card-color: #ffffff;
+    --text-color: #222222;
+    --border-color: #dddddd;
+
+    --spacing-small: 8px;
+    --spacing-medium: 15px;
+    --spacing-large: 35px;
+}
 
 /* Universal Selector */
 * {
@@ -10,9 +23,9 @@
 
 /* Body Styling */
 body {
-    background-color: #eef2ff;
+    background-color: var(--background-color);
     font-family: 'Poppins', sans-serif;
-    color: #222222;
+    color: var(--text-color);
     font-size: 16px;
     line-height: 1.6;
     padding: 20px;
@@ -24,42 +37,42 @@ body {
     margin: auto;
 }
 
-/* ID Selector */
+/* Hero Section */
 #hero {
-    background-color: #3158e7;
-    color: #ffffff;
+    background-color: var(--primary-color);
+    color: white;
     text-align: center;
-    padding: 35px 20px;
+    padding: var(--spacing-large);
     border-radius: 12px;
-    margin-bottom: 15px;
+    margin-bottom: var(--spacing-medium);
 }
 
-/* Element Selector */
+/* Heading */
 h1 {
     font-size: 32px;
     font-weight: 700;
-    color: #ffffff;
-    margin-bottom: 8px;
+    color: white;
+    margin-bottom: var(--spacing-small);
 }
 
 /* Hero Paragraph */
 #hero p {
     font-size: 15px;
-    color: #ffffff;
+    color: white;
     line-height: 1.6;
 }
 
-/* Class Selector */
+/* Cards */
 .card {
-    background-color: #ffffff;
-    padding: 15px;
+    background-color: var(--card-color);
+    padding: var(--spacing-medium);
     border-radius: 12px;
-    margin-bottom: 15px;
+    margin-bottom: var(--spacing-medium);
 }
 
 /* Card Heading */
 .card h2 {
-    color: #222222;
+    color: var(--text-color);
     font-size: 21px;
     font-weight: 600;
     line-height: 1.4;
@@ -73,8 +86,8 @@ table {
 }
 
 th {
-    background-color: #3158e7;
-    color: #ffffff;
+    background-color: var(--primary-color);
+    color: white;
     padding: 10px;
     text-align: left;
     font-size: 14px;
@@ -82,28 +95,26 @@ th {
 
 td {
     padding: 10px;
-    color: #333333;
+    color: var(--text-color);
     font-size: 14px;
-    line-height: 1.6;
-    border-bottom: 1px solid #dddddd;
+    border-bottom: 1px solid var(--border-color);
 }
 
 /* Form */
 label {
     font-size: 14px;
-    color: #333333;
 }
 
 input {
     width: 175px;
     padding: 6px;
-    margin-bottom: 6px;
+    margin-bottom: var(--spacing-small);
     font-family: 'Poppins', sans-serif;
 }
 
 button {
-    background-color: #3158e7;
-    color: #ffffff;
+    background-color: var(--primary-color);
+    color: white;
     border: none;
     padding: 9px 17px;
     border-radius: 5px;
