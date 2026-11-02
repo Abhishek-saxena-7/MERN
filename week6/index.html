@@ -6,21 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abhishek - B.Tech CSE Student</title>
 
-    <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    <!-- CSS File -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+    <!-- Task 6.4 - Sticky Top Bar -->
+    <nav class="top-bar">
+        <h2>Abhishek</h2>
+
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#profile">Profile</a>
+            <a href="#bio">About</a>
+        </div>
+    </nav>
+
     <div class="container">
 
         <!-- Student Information -->
-        <header class="student-info">
+        <header class="student-info" id="home">
             <h1>Abhishek</h1>
             <p>B.Tech CSE Student</p>
             <p>Invertis University, Bareilly</p>
@@ -28,7 +37,7 @@
 
         <!-- Task 6.1 - Box Model -->
         <section class="card box-demo">
-            <h2>Task 6.1 - CSS Box Model</h2>
+            <h2>CSS Box Model</h2>
             <p>This is my CSS Box Model example.</p>
             <p>I am learning Padding, Border and Margin.</p>
         </section>
@@ -45,8 +54,8 @@
         </section>
 
         <!-- Task 6.2 - Profile Cards -->
-        <section class="card-section">
-            <h2 class="section-title">Task 6.2 - My Profile Cards</h2>
+        <section class="card-section" id="profile">
+            <h2 class="section-title"> My Profile Cards</h2>
 
             <div class="profile-card blue-card">
                 <div class="avatar">A</div>
@@ -66,46 +75,36 @@
         </section>
 
         <!-- Task 6.3 - Bio Box -->
-        <section class="card bio-section">
+        <section class="card bio-section" id="bio">
             <h2>About Me</h2>
 
             <div class="bio-box">
                 <h3>My Bio</h3>
-
-                <p>
-                    Hello! My name is Abhishek.
-                    I am a B.Tech Computer Science Engineering student
-                    at Invertis University, Bareilly.
-                </p>
-
-                <p>
-                    I am interested in Web Development and Programming.
-                    I am learning HTML, CSS, Java and Data Structures.
-                </p>
-
-                <p>
-                    My goal is to become a successful Software Developer.
-                    I enjoy learning new technologies and building projects.
-                </p>
-
-                <p>
-                    I am also improving my problem-solving skills
-                    and practicing coding regularly.
-                </p>
-
-                <p>
-                    I want to develop useful websites and applications
-                    and grow my technical knowledge.
-                </p>
+                <p>Hello! My name is Abhishek. I am a B.Tech Computer Science Engineering student at Invertis University, Bareilly.</p>
+                <p>I am interested in Web Development and Programming. I am learning HTML, CSS, Java and Data Structures.</p>
+                <p>M y goal is to become a successful Software Developer. I enjoy learning new technologies and building projects.</p>
+                <p>I am also improving my problem-solving skills and practicing coding regularly.</p>
+                <p>I want to develop useful websites and applications and grow my technical knowledge.</p>
             </div>
         </section>
 
-        <!-- Footer -->
-        <footer class="footer">
-            <p>Created by Abhishek | B.Tech CSE</p>
-        </footer>
+        <!-- Extra Content to Test Sticky Bar -->
+        <section class="card">
+            <h2>My Learning Goals</h2>
+            <p>Learn HTML, CSS, JavaScript and Java.</p>
+            <p>Build real-world web development projects.</p>
+            <p>Practice programming and improve problem-solving skills.</p>
+        </section>
 
     </div>
+
+    <!-- Fixed Plus Button -->
+    <button class="plus-button" type="button" aria-label="Add">+</button>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Created by Abhishek | B.Tech CSE</p>
+    </footer>
 
 </body>
 </html>

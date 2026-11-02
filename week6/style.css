@@ -1,5 +1,5 @@
 
-/* Week 6 - Tasks 6.1, 6.2 and 6.3 */
+/* Week 6 - Tasks 6.1, 6.2, 6.3 and 6.4 */
 
 /* Universal Selector */
 * {
@@ -23,6 +23,40 @@ body {
     color: var(--text-color);
     font-size: 16px;
     line-height: 1.6;
+}
+
+/* Task 6.4 - Sticky Top Bar */
+.top-bar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #203fc0;
+    color: white;
+    padding: 15px 30px;
+}
+
+.top-bar h2 {
+    font-size: 22px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
 }
 
 /* Main Container */
@@ -165,7 +199,7 @@ body {
     font-weight: 600;
 }
 
-/* Task 6.3 - Bio Box */
+/* Task 6.3 - Scrollable Bio Box */
 .bio-section h2 {
     color: var(--primary-color);
     margin-bottom: 15px;
@@ -175,18 +209,42 @@ body {
     height: 150px;
     overflow: auto;
     padding: 15px;
-    border: 2px solid #3158e7;
+    border: 2px solid var(--primary-color);
     border-radius: 8px;
     background-color: #f5f7ff;
 }
 
 .bio-box h3 {
     margin-bottom: 10px;
-    color: #3158e7;
+    color: var(--primary-color);
 }
 
 .bio-box p {
     margin-bottom: 15px;
+}
+
+/* Task 6.4 - Fixed Plus Button */
+.plus-button {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    z-index: 1100;
+
+    width: 55px;
+    height: 55px;
+    border: none;
+    border-radius: 50%;
+
+    background-color: #3158e7;
+    color: white;
+    font-size: 32px;
+    cursor: pointer;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.plus-button:hover {
+    background-color: #203fc0;
 }
 
 /* Footer */
@@ -195,4 +253,29 @@ body {
     padding: 20px;
     margin-top: 20px;
     color: #555555;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+    .top-bar {
+        padding: 12px;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .nav-links {
+        gap: 15px;
+    }
+
+    .container {
+        padding: 12px;
+    }
+
+    .profile-card {
+        width: 100%;
+    }
+
+    .box-demo {
+        max-width: 100%;
+    }
 }
