@@ -1,5 +1,5 @@
 
-/* Task 6.1 - CSS Box Model */
+/* Week 6 - Task 6.1 and 6.2 */
 
 /* Universal Selector */
 * {
@@ -8,11 +8,19 @@
     padding: 0;
 }
 
+/* Root Variables */
+:root {
+    --primary-color: #3158e7;
+    --background-color: #eef2ff;
+    --card-color: #ffffff;
+    --text-color: #222222;
+}
+
 /* Body Styling */
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #eef2ff;
-    color: #222222;
+    background-color: var(--background-color);
+    color: var(--text-color);
     font-size: 16px;
     line-height: 1.6;
 }
@@ -27,59 +35,56 @@ body {
 /* Student Information */
 .student-info {
     text-align: center;
-    background-color: #3158e7;
+    background-color: var(--primary-color);
     color: white;
-    padding: 20px;
-    margin-bottom: 25px;
-    border-radius: 10px;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 12px;
 }
 
 .student-info h1 {
-    font-size: 30px;
+    font-size: 32px;
     margin-bottom: 5px;
 }
 
 .student-info p {
-    font-size: 18px;
+    font-size: 17px;
 }
 
-/* Common Card Styling */
+/* Common Card */
 .card {
-    background-color: white;
+    background-color: var(--card-color);
     padding: 25px;
     margin-bottom: 25px;
     border-radius: 10px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
+.card h2 {
+    margin-bottom: 12px;
+}
+
 /* Task 6.1 - Box Model */
 .box-demo {
     width: 300px;
     height: 180px;
-
-    /* Padding */
     padding: 20px;
-
-    /* Border */
     border: 5px solid blue;
-
-    /* Margin */
     margin: 30px auto;
-
     background-color: lightblue;
     border-radius: 8px;
 }
 
 .box-demo h2 {
     font-size: 20px;
-    margin-bottom: 10px;
 }
 
 .box-demo p {
     margin-top: 10px;
+    font-size: 14px;
 }
 
-/* Box Model Properties */
+/* Box Model List */
 .card ul {
     padding-left: 25px;
 }
@@ -88,10 +93,88 @@ body {
     margin-bottom: 8px;
 }
 
+/* Task 6.2 - Profile Cards */
+.card-section {
+    margin-top: 30px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+    font-size: 25px;
+}
+
+/* Profile Card Common Design */
+.profile-card {
+    width: 320px;
+    padding: 25px;
+    margin: 25px auto;
+    text-align: center;
+    border: 3px solid;
+    border-radius: 18px;
+    transition: transform 0.3s;
+}
+
+.profile-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Circle Avatar */
+.avatar {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: white;
+    border: 3px solid currentColor;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0 auto 15px;
+}
+
+/* Blue Profile Card */
+.blue-card {
+    color: #3158e7;
+    border-color: #3158e7;
+    background-color: #eaf0ff;
+}
+
+/* Green Profile Card */
+.green-card {
+    color: #16834a;
+    border-color: #16834a;
+    background-color: #e8fff0;
+}
+
+/* Profile Card Text */
+.profile-card h2 {
+    font-size: 23px;
+    margin-bottom: 8px;
+}
+
+.profile-card p {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+/* Card Labels */
+.card-label {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 5px 15px;
+    border-radius: 20px;
+    background-color: white;
+    font-size: 12px;
+    font-weight: 600;
+}
+
 /* Footer */
 .footer {
     text-align: center;
-    padding: 15px;
-    color: #555555;
+    padding: 20px;
     margin-top: 20px;
+    color: #555555;
 }
