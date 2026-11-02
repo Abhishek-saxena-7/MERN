@@ -1,0 +1,86 @@
+
+/* Task 5.1 - Tech Club CSS */
+
+/* Body Styling */
+body {
+    margin: 0;
+    padding: 20px;
+    background-color: #eef2ff;
+    font-family: "Times New Roman", serif;
+    color: #222222;
+}
+
+/* Main Container */
+.container {
+    max-width: 620px;
+    margin: auto;
+}
+
+/* Hero Section */
+#hero {
+    background-color: #3158e7;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+#hero h1 {
+    font-size: 32px;
+    margin: 15px 0 10px;
+}
+
+#hero p {
+    font-size: 15px;
+    margin: 0 0 12px;
+}
+
+/* Card Styling */
+.card {
+    background-color: white;
+    padding: 15px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+.card h2 {
+    font-size: 21px;
+    margin-top: 5px;
+    margin-bottom: 12px;
+}
+
+/* Events Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: #3158e7;
+    color: white;
+    padding: 10px;
+    text-align: left;
+}
+
+td {
+    padding: 10px;
+    border-bottom: 1px solid #dddddd;
+}
+
+/* Register Form */
+input {
+    width: 165px;
+    padding: 6px;
+    margin-bottom: 6px;
+}
+
+button {
+    background-color: #3158e7;
+    color: white;
+    border: none;
+    padding: 9px 17px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
