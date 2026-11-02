@@ -1,4 +1,5 @@
 
+/* Basic CSS */
 * {
     box-sizing: border-box;
 }
@@ -14,14 +15,13 @@ header {
     background-color: navy;
     color: white;
     text-align: center;
-    padding: 25px;
+    padding: 30px;
 }
 
-/* Flexbox Navbar */
+/* Navbar */
 nav {
     display: flex;
     justify-content: center;
-    align-items: center;
     gap: 25px;
     background-color: black;
     padding: 15px;
@@ -30,10 +30,9 @@ nav {
 nav a {
     color: white;
     text-decoration: none;
-    font-size: 16px;
 }
 
-/* CSS Grid Sections */
+/* Main Grid */
 main {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -45,8 +44,8 @@ main {
 .card {
     background-color: white;
     padding: 25px;
-    border-radius: 10px;
     text-align: center;
+    border-radius: 10px;
     box-shadow: 0 2px 8px #ccc;
 }
 
@@ -58,15 +57,32 @@ footer {
     padding: 15px;
 }
 
-/* Mobile Responsive */
-@media (max-width: 600px) {
-
+/* Mobile */
+@media (max-width: 767px) {
     nav {
         flex-direction: column;
-        gap: 15px;
+        text-align: center;
     }
 
     main {
         grid-template-columns: 1fr;
+    }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+    main {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+    main {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    header {
+        padding: 40px;
     }
 }
