@@ -1,154 +1,83 @@
 
-/* Mobile First CSS */
+/* Mobile First Layout */
 
 * {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
 }
 
 body {
+    margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #f1f5f9;
+    background-color: #f0f0f0;
 }
 
-/* Mobile Navbar */
-.navbar {
-    background-color: #1e40af;
+/* Header */
+header {
+    background-color: navy;
     color: white;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-}
-
-.navbar nav {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
     text-align: center;
+    padding: 20px;
 }
 
-.navbar a {
+/* Navbar */
+nav {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+}
+
+nav a {
     color: white;
     text-decoration: none;
+    padding: 15px;
+    text-align: center;
 }
 
-/* Hero Section */
-.hero {
-    background-color: #dbeafe;
-    min-height: 250px;
-    padding: 30px 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+/* Main Section */
+main {
+    display: grid;
+    grid-template-columns: 1fr;
     gap: 15px;
-}
-
-.hero h1 {
-    color: #1e40af;
-    font-size: 28px;
-}
-
-.hero button {
-    background-color: #1e40af;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 5px;
-}
-
-/* About Section */
-.about {
-    padding: 30px 20px;
-    text-align: center;
-}
-
-.about p {
-    margin-top: 15px;
-    line-height: 1.6;
-}
-
-/* Skills Section */
-.skills {
-    padding: 30px 20px;
-    text-align: center;
-}
-
-.card-container {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    margin-top: 20px;
+    padding: 15px;
 }
 
 .card {
     background-color: white;
-    border: 2px solid #2563eb;
+    padding: 20px;
     border-radius: 10px;
-    padding: 25px;
+    text-align: center;
 }
 
 /* Footer */
 footer {
-    background-color: #1e40af;
+    background-color: navy;
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 15px;
 }
 
-/* Tablet: 768px */
+/* Tablet - 768px */
 @media (min-width: 768px) {
 
-    .navbar {
+    nav {
         flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .navbar nav {
-        flex-direction: row;
-        gap: 25px;
-    }
-
-    .hero h1 {
-        font-size: 36px;
-    }
-
-    .card-container {
-        flex-direction: row;
-        flex-wrap: wrap;
         justify-content: center;
     }
 
-    .card {
-        flex: 1 1 200px;
+    main {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
-/* Desktop: 1024px */
+/* Desktop - 1024px */
 @media (min-width: 1024px) {
 
-    .hero {
-        min-height: 400px;
+    main {
+        grid-template-columns: repeat(3, 1fr);
+        padding: 30px;
     }
 
-    .hero h1 {
-        font-size: 45px;
-    }
-
-    .about,
-    .skills {
-        padding: 50px;
-    }
-
-    .card-container {
-        gap: 25px;
-    }
-
-    .card {
-        max-width: 300px;
+    header {
+        padding: 35px;
     }
 }
