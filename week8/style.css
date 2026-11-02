@@ -1,0 +1,61 @@
+
+/* Week 8 - Task 8.1 CSS Grid */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 30px;
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    color: #222;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #555;
+}
+
+/* Grid Container */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Grid Boxes */
+.box {
+    background-color: #2563eb;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.box h2 {
+    margin-bottom: 10px;
+}
+
+.box p {
+    font-size: 16px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
