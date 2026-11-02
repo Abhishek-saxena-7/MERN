@@ -1,7 +1,7 @@
 
-/* Task 5.2 - Four CSS Selectors */
+/* Task 5.3 - Fonts, Colors and Typography */
 
-/* 1. Universal Selector */
+/* Universal Selector */
 * {
     margin: 0;
     padding: 0;
@@ -11,40 +11,47 @@
 /* Body Styling */
 body {
     background-color: #eef2ff;
-    font-family: "Times New Roman", serif;
+    font-family: 'Poppins', sans-serif;
+    color: #222222;
+    font-size: 16px;
+    line-height: 1.6;
     padding: 20px;
 }
 
-/* Main Container */
+/* Container */
 .container {
     max-width: 620px;
     margin: auto;
 }
 
-/* 2. ID Selector */
+/* ID Selector */
 #hero {
     background-color: #3158e7;
-    color: white;
+    color: #ffffff;
     text-align: center;
     padding: 35px 20px;
     border-radius: 12px;
     margin-bottom: 15px;
 }
 
-/* 3. Element Selector */
+/* Element Selector */
 h1 {
     font-size: 32px;
-    margin-bottom: 10px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 8px;
 }
 
 /* Hero Paragraph */
 #hero p {
     font-size: 15px;
+    color: #ffffff;
+    line-height: 1.6;
 }
 
-/* 4. Class Selector */
+/* Class Selector */
 .card {
-    background-color: white;
+    background-color: #ffffff;
     padding: 15px;
     border-radius: 12px;
     margin-bottom: 15px;
@@ -52,11 +59,14 @@ h1 {
 
 /* Card Heading */
 .card h2 {
+    color: #222222;
     font-size: 21px;
+    font-weight: 600;
+    line-height: 1.4;
     margin-bottom: 12px;
 }
 
-/* Events Table */
+/* Table */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -64,28 +74,40 @@ table {
 
 th {
     background-color: #3158e7;
-    color: white;
+    color: #ffffff;
     padding: 10px;
     text-align: left;
+    font-size: 14px;
 }
 
 td {
     padding: 10px;
+    color: #333333;
+    font-size: 14px;
+    line-height: 1.6;
     border-bottom: 1px solid #dddddd;
 }
 
-/* Register Form */
+/* Form */
+label {
+    font-size: 14px;
+    color: #333333;
+}
+
 input {
-    width: 165px;
+    width: 175px;
     padding: 6px;
     margin-bottom: 6px;
+    font-family: 'Poppins', sans-serif;
 }
 
 button {
     background-color: #3158e7;
-    color: white;
+    color: #ffffff;
     border: none;
     padding: 9px 17px;
     border-radius: 5px;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
     cursor: pointer;
 }
