@@ -1,0 +1,97 @@
+
+/* Task 6.1 - CSS Box Model */
+
+/* Universal Selector */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #eef2ff;
+    color: #222222;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Main Container */
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+/* Student Information */
+.student-info {
+    text-align: center;
+    background-color: #3158e7;
+    color: white;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+}
+
+.student-info h1 {
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.student-info p {
+    font-size: 18px;
+}
+
+/* Common Card Styling */
+.card {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* Task 6.1 - Box Model */
+.box-demo {
+    width: 300px;
+    height: 180px;
+
+    /* Padding */
+    padding: 20px;
+
+    /* Border */
+    border: 5px solid blue;
+
+    /* Margin */
+    margin: 30px auto;
+
+    background-color: lightblue;
+    border-radius: 8px;
+}
+
+.box-demo h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.box-demo p {
+    margin-top: 10px;
+}
+
+/* Box Model Properties */
+.card ul {
+    padding-left: 25px;
+}
+
+.card li {
+    margin-bottom: 8px;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 15px;
+    color: #555555;
+    margin-top: 20px;
+}
