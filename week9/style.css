@@ -5,50 +5,68 @@
 
 body {
     margin: 0;
-    padding: 1rem;
     font-family: Arial, sans-serif;
-    font-size: 1rem;
     background-color: #f0f4f8;
 }
 
+/* Header */
 header {
     background-color: navy;
     color: white;
     text-align: center;
-    padding: 1.5rem;
+    padding: 25px;
 }
 
-h1 {
-    font-size: 2rem;
+/* Flexbox Navbar */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    background-color: black;
+    padding: 15px;
 }
 
-h2 {
-    font-size: 1.5rem;
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
 }
 
+/* CSS Grid Sections */
+main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 25px;
+}
+
+/* Cards */
 .card {
-    max-width: 600px;
-    margin: 2rem auto;
-    padding: 1.5rem;
     background-color: white;
+    padding: 25px;
     border-radius: 10px;
     text-align: center;
+    box-shadow: 0 2px 8px #ccc;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-
-p {
-    font-size: 1rem;
-    line-height: 1.6;
-}
-
+/* Footer */
 footer {
     background-color: navy;
     color: white;
     text-align: center;
-    padding: 1rem;
+    padding: 15px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    main {
+        grid-template-columns: 1fr;
+    }
 }
