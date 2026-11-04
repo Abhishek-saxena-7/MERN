@@ -4,65 +4,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
+    <title>Abhishek - Landing Page</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header class="navbar">
-        <h2>Abhishek</h2>
+    <!-- 7.1 Navbar using Flexbox -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Abhishek</div>
 
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#contact">Contact</a>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
+                <button class="nav-btn">Get Started</button>
+            </div>
         </nav>
     </header>
 
+    <!-- 7.2 Banner using Flexbox -->
     <section class="banner" id="home">
-        <h1>Welcome to My Website</h1>
-        <p>Abhishek | B.Tech CSE Student</p>
-        <button>Explore More</button>
+        <div class="banner-content">
+            <h1>Welcome to My Website</h1>
+            <p>
+                Hello! I am Abhishek, a B.Tech CSE Student
+                at Invertis University Bareilly.
+            </p>
+            <button class="main-btn">Explore More</button>
+        </div>
     </section>
 
-    <section class="about" id="about">
-        <h2>About Me</h2>
-        <p>
-            Hello! My name is Abhishek.
-            I am a B.Tech Computer Science Engineering student.
-            I am learning HTML, CSS and Java.
-        </p>
-    </section>
-
-    <section class="skills" id="skills">
+    <!-- 7.3 Cards using Flexbox -->
+    <section class="services" id="services">
         <h2>My Skills</h2>
 
         <div class="card-container">
+
             <div class="card">
                 <h3>HTML</h3>
-                <p>Website Structure</p>
+                <p>Learning HTML to create web pages.</p>
             </div>
 
             <div class="card">
                 <h3>CSS</h3>
-                <p>Website Designing</p>
+                <p>Learning CSS to design beautiful websites.</p>
             </div>
 
             <div class="card">
                 <h3>Java</h3>
-                <p>Programming</p>
+                <p>Learning Java programming language.</p>
             </div>
+
+            <div class="card">
+                <h3>DSA</h3>
+                <p>Learning Data Structures and Algorithms.</p>
+            </div>
+
         </div>
     </section>
 
-    <section class="contact" id="contact">
-        <h2>Contact Me</h2>
-        <p>Email: abhishek@example.com</p>
+    <!-- About Section -->
+    <section class="about" id="about">
+        <h2>About Me</h2>
+        <p>
+            My name is Abhishek.
+            I am pursuing B.Tech in Computer Science Engineering.
+            My goal is to become a Software Developer.
+        </p>
     </section>
 
-    <footer>
-        <p>© 2026 Abhishek | B.Tech CSE Student</p>
+    <!-- Contact Section -->
+    <footer id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: abhishek@example.com</p>
+        <p>© 2026 Abhishek | All Rights Reserved</p>
     </footer>
 
 </body>
